@@ -1,6 +1,15 @@
 .bg-blue {
   background-color: #03a9f5;
 }
+.hero {
+  background-image: url(../../img/image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  justify-content: center;
+
+}
 
 .logo {
   height: 40px;
