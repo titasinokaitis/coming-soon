@@ -108,11 +108,35 @@ footer a {
   gap: 0 30px;
 }
 
+.text-trio p {
+  position: relative;
+}
+
+
+.text-trio p::after {
+  content:'';
+  display: inline-block;
+  width: 2px;
+  height: 16px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateX(50%) translateY(-50%);
+}
+.text-trio p:last-child::after {
+  display: none;
+}
+
 @media (max-width: 700px) {
   .text-trio {
     flex-direction: column;
   }
+  .text-trio p::after {
+    display: none;
+  }
 }
+
 
 footer .row {
   position: relative;
